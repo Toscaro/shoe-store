@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+
+    <!-- Login Fragment Screen -->
+    <string name="login_screen_title">Login</string>
+    <string name="login_email_header">Email</string>
+    <string name="login_email_field_hint">Type your email…</string>
+    <string name="login_password_field_hint">Type your password…</string>
+    <string name="login_password_header">Password</string>
+    <string name="login_register_button">Register</string>
+    <string name="login_login_existing_account_button">Login with existing account</string>
 </resources>
