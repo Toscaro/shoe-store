@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.toscaro.shoestore.R
 import com.toscaro.shoestore.databinding.FragmentWelcomeBinding
 import com.toscaro.shoestore.view.common.BaseFragment
@@ -18,9 +19,11 @@ class WelcomeFragment : BaseFragment() {
     ): View {
         val binding = FragmentWelcomeBinding.inflate(inflater, container, false)
 
-        binding.welcomeHowToUseButton.setOnClickListener {
-            //TODO add click listener when implement the instruction screen
-        }
+        binding.welcomeHowToUseButton.setOnClickListener(
+            Navigation.createNavigateOnClickListener(
+                WelcomeFragmentDirections.actionWelcomeFragmentToInstructionFragment()
+            )
+        )
         return binding.root
     }
 

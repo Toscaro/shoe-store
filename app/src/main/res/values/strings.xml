@@ -1,5 +1,7 @@
 <resources>
+    <!-- Generic texts -->
     <string name="app_name">ShoeStore</string>
+    <string name="save_text">Save</string>
 
     <!-- Login Fragment Screen -->
     <string name="login_screen_title">Login</string>
@@ -16,4 +18,13 @@
     <string name="welcome_shoe_app_icon_description">Shoe app icon</string>
     <string name="welcome_description_text">Toscaro\'s Shoe Store will help you to store shoes from all existing brands and easily control your stock.</string>
     <string name="welcome_how_to_use_text">How to use &gt;&gt;&gt;</string>
+
+    <!-- Instruction Fragment Screen -->
+    <string name="instruction_screen_title">How To Use</string>
+    <string name="instruction_steps_header">Steps</string>
+    <string name="instruction_step_one_text">1# Step, click on the (+) button to add a new Shoe.</string>
+    <string name="instruction_step_one_image_content_description">The example of a round orange button to add a new shoe</string>
+    <string name="instruction_step_two_text">2# Step, write all information about it, like Shoe name, company, size, description and hit SAVE.</string>
+    <string name="instruction_step_two_image_content_description">The example of an orange button to save a new shoe</string>
+    <string name="instruction_continue_button">Continue &gt;&gt;&gt;</string>
 </resources>

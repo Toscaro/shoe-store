@@ -21,6 +21,20 @@
         android:id="@+id/welcomeFragment"
         android:name="com.toscaro.shoestore.view.welcome.WelcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" />
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment"
+            app:enterAnim="@anim/slide_left_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_right_out"
+            app:popExitAnim="@anim/slide_right_in" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.toscaro.shoestore.view.instructions.InstructionFragment"
+        android:label="fragment_instruction"
+        tools:layout="@layout/fragment_instruction" />
 
 </navigation>
