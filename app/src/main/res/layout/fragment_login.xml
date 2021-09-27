@@ -6,13 +6,16 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
 
         <TextView
             android:id="@+id/email_header"
             style="@style/HeaderStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
             android:text="@string/login_email_header"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -21,9 +24,12 @@
 
         <EditText
             android:id="@+id/email_text_field"
-            style="@style/InputStyle"
+            style="@style/DescriptionStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="36dp"
             android:autofillHints="email"
             android:hint="@string/login_email_field_hint"
             android:inputType="textEmailAddress"
@@ -36,6 +42,8 @@
             style="@style/HeaderStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
             android:text="@string/login_password_header"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -44,9 +52,12 @@
 
         <EditText
             android:id="@+id/password_text_field"
-            style="@style/InputStyle"
+            style="@style/DescriptionStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="36dp"
             android:autofillHints="password"
             android:hint="@string/login_password_field_hint"
             android:inputType="textPassword"
@@ -56,22 +67,20 @@
 
         <TextView
             android:id="@+id/login_with_existing_account_button"
+            style="@style/TextViewButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
             android:layout_marginEnd="36dp"
             android:layout_marginBottom="8dp"
-            android:background="?attr/selectableItemBackground"
             android:text="@string/login_login_existing_account_button"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/register_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/register_button"
+            style="@style/ButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"

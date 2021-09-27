@@ -9,4 +9,11 @@
     <string name="login_password_header">Password</string>
     <string name="login_register_button">Register</string>
     <string name="login_login_existing_account_button">Login with existing account</string>
+
+    <!-- Welcome Fragment Screen -->
+    <string name="welcome_screen_title">Welcome</string>
+    <string name="welcome_header_text">Welcome to Toscaro\'s Shoe Store App!</string>
+    <string name="welcome_shoe_app_icon_description">Shoe app icon</string>
+    <string name="welcome_description_text">Toscaro\'s Shoe Store will help you to store shoes from all existing brands and easily control your stock.</string>
+    <string name="welcome_how_to_use_text">How to use &gt;&gt;&gt;</string>
 </resources>

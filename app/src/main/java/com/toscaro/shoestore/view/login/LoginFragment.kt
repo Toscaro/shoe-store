@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.toscaro.shoestore.R
 import com.toscaro.shoestore.databinding.FragmentLoginBinding
 import com.toscaro.shoestore.view.common.BaseFragment
@@ -18,13 +19,11 @@ class LoginFragment : BaseFragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding = FragmentLoginBinding.inflate(inflater, container, false)
+        val navigateToWelcomeClickListener =
+            Navigation.createNavigateOnClickListener(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
 
-        binding.registerButton.setOnClickListener {
-            //TODO Implement when add Welcome Screen
-        }
-        binding.loginWithExistingAccountButton.setOnClickListener {
-            //TODO Implement when add Welcome Screen
-        }
+        binding.registerButton.setOnClickListener(navigateToWelcomeClickListener)
+        binding.loginWithExistingAccountButton.setOnClickListener(navigateToWelcomeClickListener)
         return binding.root
     }
 }
