@@ -5,10 +5,10 @@
 
     <!-- Login Fragment Screen -->
     <string name="login_screen_title">Login</string>
-    <string name="login_email_header">Email</string>
+    <string name="login_email_header">&#8226; Email</string>
     <string name="login_email_field_hint">Type your email…</string>
     <string name="login_password_field_hint">Type your password…</string>
-    <string name="login_password_header">Password</string>
+    <string name="login_password_header">&#8226; Password</string>
     <string name="login_register_button">Register</string>
     <string name="login_login_existing_account_button">Login with existing account</string>
 
@@ -21,10 +21,14 @@
 
     <!-- Instruction Fragment Screen -->
     <string name="instruction_screen_title">How To Use</string>
-    <string name="instruction_steps_header">Steps</string>
+    <string name="instruction_steps_header">&#8226; Steps</string>
     <string name="instruction_step_one_text">1# Step, click on the (+) button to add a new Shoe.</string>
     <string name="instruction_step_one_image_content_description">The example of a round orange button to add a new shoe</string>
     <string name="instruction_step_two_text">2# Step, write all information about it, like Shoe name, company, size, description and hit SAVE.</string>
     <string name="instruction_step_two_image_content_description">The example of an orange button to save a new shoe</string>
     <string name="instruction_continue_button">Continue &gt;&gt;&gt;</string>
+
+    <!-- Shoe List Fragment Screen -->
+    <string name="shoe_list_screen_title">Shoe List</string>
+    <string name="shoe_list_add_new_shoe_button_content_description">Add new Shoe</string>
 </resources>
