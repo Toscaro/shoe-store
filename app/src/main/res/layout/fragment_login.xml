@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.login.LoginFragment">
 
+    <!-- Constraint was preferred on this case due the bottom buttons, its easier to constraint and
+    set the bias to the bottom, or even simply add a bottom to bottom of parent connection.
+    To see another way to implement it, check the fragment_instruction -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -78,7 +81,9 @@
             android:text="@string/login_login_existing_account_button"
             app:layout_constraintBottom_toTopOf="@id/register_button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_text_field"
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/register_button"
