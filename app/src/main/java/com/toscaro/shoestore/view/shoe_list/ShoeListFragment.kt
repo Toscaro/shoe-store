@@ -1,4 +1,4 @@
-package com.toscaro.shoestore.view.shoe
+package com.toscaro.shoestore.view.shoe_list
 
 import android.os.Bundle
 import android.view.*
