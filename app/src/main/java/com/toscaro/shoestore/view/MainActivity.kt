@@ -31,23 +31,6 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(setOf(R.id.loginFragment, R.id.shoeListFragment))
 
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration)
-        navController.addOnDestinationChangedListener { _, _, _ ->
-            invalidateOptionsMenu()
-        }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean =
-        if (navController.currentDestination?.id == navController.graph.startDestination) {
-            super.onCreateOptionsMenu(menu)
-        } else {
-            val inflater: MenuInflater = menuInflater
-            inflater.inflate(R.menu.menu, menu)
-            true
-        }
-
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item)
     }
 
     override fun onSupportNavigateUp(): Boolean {

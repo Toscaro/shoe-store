@@ -2,6 +2,7 @@
     <!-- Generic texts -->
     <string name="app_name">ShoeStore</string>
     <string name="save_text">Save</string>
+    <string name="menu_logout_item">Logout</string>
 
     <!-- Login Fragment Screen -->
     <string name="login_screen_title">Login</string>
