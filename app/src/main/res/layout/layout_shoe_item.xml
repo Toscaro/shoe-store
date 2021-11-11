@@ -19,6 +19,8 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="30dp">
 
+        <!-- Here I also used LinearLayout due all views are added at the bottom to each other that's
+        why ConstraintLayout will just increase the view complexity -->
         <LinearLayout
             android:id="@+id/shoe_item_container"
             android:layout_width="match_parent"

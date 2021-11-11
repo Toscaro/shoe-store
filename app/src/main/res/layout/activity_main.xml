@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".view.MainActivity">
 
+    <!-- Here I used Linear Layout due it is a simple layout that contain just two child views
+    in a vertical way, making unnecessary the use of ConstraintLayout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

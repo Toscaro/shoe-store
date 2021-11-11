@@ -17,6 +17,9 @@
         android:layout_height="match_parent"
         android:fillViewport="true">
 
+        <!-- Here used LinearLayout due all views are added at the bottom to each other that's
+        why ConstraintLayout will just increase the view complexity, to make the bottom buttons
+        i had to use the "Space" view, same as in fragment instruction -->
         <LinearLayout
             android:id="@+id/root_add_shoe_view"
             android:layout_width="match_parent"
