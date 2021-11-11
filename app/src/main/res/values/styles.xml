@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -17,18 +18,27 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="HeaderStyle">
+    <style name="TextViewHeaderStyle" parent="Widget.AppCompat.TextView">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorBlack</item>
     </style>
 
-    <style name="DescriptionStyle">
+    <style name="TextViewDescriptionStyle" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">@color/colorBlack</item>
     </style>
 
-    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+    <style name="ButtonNormalStyle" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/colorWhite</item>
-        <item name="android:background">@color/colorAccent</item>
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <style name="ButtonBorderStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/button_border_background</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorBlack</item>
     </style>
 
     <style name="TextViewButtonStyle" parent="Widget.AppCompat.TextView">

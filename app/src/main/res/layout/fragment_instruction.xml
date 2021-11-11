@@ -13,7 +13,7 @@
 
         <TextView
             android:id="@+id/steps_header"
-            style="@style/HeaderStyle"
+            style="@style/TextViewHeaderStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/first_step"
-            style="@style/DescriptionStyle"
+            style="@style/TextViewDescriptionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -48,7 +48,7 @@
 
         <TextView
             android:id="@+id/second_step"
-            style="@style/DescriptionStyle"
+            style="@style/TextViewDescriptionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -60,7 +60,7 @@
 
         <Button
             android:id="@+id/save_example"
-            style="@style/ButtonStyle"
+            style="@style/ButtonNormalStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -80,7 +80,7 @@
 
         <Button
             android:id="@+id/continue_button"
-            style="@style/ButtonStyle"
+            style="@style/ButtonNormalStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"

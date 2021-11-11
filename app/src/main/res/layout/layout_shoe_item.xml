@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.widget.ImageView.ScaleType" />
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="shoe"
+            type="com.toscaro.shoestore.model.Shoe" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:id="@+id/shoe_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:contentDescription="@string/shoe_item_image_content_description"
+                android:scaleType="centerCrop"
+                app:isVisible="@{shoe.image != null}"
+                app:srcBitmap="@{shoe.image}"
+                app:srcBitmapScaleType="@{ScaleType.CENTER_CROP}"
+                tools:scaleType="center"
+                tools:src="@drawable/add_picture" />
+
+            <LinearLayout
+                android:id="@+id/inner_shoe_item_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <TextView
+                    style="@style/TextViewHeaderStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/shoe_item_name_header"
+                    app:isVisible="@{!TextUtils.isEmpty(shoe.name)}" />
+
+                <TextView
+                    android:id="@+id/shoe_name"
+                    style="@style/TextViewDescriptionStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:paddingHorizontal="16dp"
+                    android:text="@{shoe.name}"
+                    app:isVisible="@{!TextUtils.isEmpty(shoe.name)}"
+                    tools:text="Name Test" />
+
+                <TextView
+                    style="@style/TextViewHeaderStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/shoe_item_size_header"
+                    app:isVisible="@{shoe.size != null}" />
+
+                <TextView
+                    android:id="@+id/shoe_size"
+                    style="@style/TextViewDescriptionStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:paddingHorizontal="16dp"
+                    app:doubleText="@{shoe.size}"
+                    app:isVisible="@{shoe.size != null}"
+                    tools:text="21.1" />
+
+                <TextView
+                    style="@style/TextViewHeaderStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/shoe_item_company_header"
+                    app:isVisible="@{!TextUtils.isEmpty(shoe.company)}" />
+
+                <TextView
+                    android:id="@+id/shoe_company"
+                    style="@style/TextViewDescriptionStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:paddingHorizontal="16dp"
+                    android:text="@{shoe.company}"
+                    app:isVisible="@{!TextUtils.isEmpty(shoe.company)}"
+                    tools:text="Company Name" />
+
+                <TextView
+                    style="@style/TextViewHeaderStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/shoe_item_description_header"
+                    app:isVisible="@{!TextUtils.isEmpty(shoe.description)}" />
+
+                <TextView
+                    android:id="@+id/shoe_description"
+                    style="@style/TextViewDescriptionStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:paddingHorizontal="16dp"
+                    android:text="@{shoe.description}"
+                    android:textAlignment="center"
+                    app:isVisible="@{!TextUtils.isEmpty(shoe.description)}"
+                    tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

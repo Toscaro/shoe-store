@@ -2,6 +2,7 @@
     <!-- Generic texts -->
     <string name="app_name">ShoeStore</string>
     <string name="save_text">Save</string>
+    <string name="cancel_text">Cancel</string>
     <string name="menu_logout_item">Logout</string>
 
     <!-- Login Fragment Screen -->
@@ -32,4 +33,23 @@
     <!-- Shoe List Fragment Screen -->
     <string name="shoe_list_screen_title">Shoe List</string>
     <string name="shoe_list_add_new_shoe_button_content_description">Add new Shoe</string>
+
+    <!-- Add Shoe Fragment Screen -->
+    <string name="add_shoe_screen_title">Add New Shoe</string>
+    <string name="add_shoe_shoe_image_content_description">Shoe image</string>
+    <string name="add_shoe_name_header">&#8226; Name</string>
+    <string name="add_shoe_shoe_name_field">Shoe name…</string>
+    <string name="add_shoe_size_header">&#8226; Size</string>
+    <string name="add_shoe_shoe_size_field">Shoe size…</string>
+    <string name="add_shoe_company_header">&#8226; Company</string>
+    <string name="add_shoe_shoe_company_field">Shoe company…</string>
+    <string name="add_shoe_description_header">&#8226; Description</string>
+    <string name="add_shoe_description_field">Type a brief description about the shoe…</string>
+
+    <!-- Shoe Item Layout -->
+    <string name="shoe_item_name_header">Name</string>
+    <string name="shoe_item_size_header">Size</string>
+    <string name="shoe_item_company_header">Company</string>
+    <string name="shoe_item_description_header">Description</string>
+    <string name="shoe_item_image_content_description">Add a shoe image</string>
 </resources>
