@@ -8,8 +8,6 @@ To run the project in your local machine, on github, simply download the zip fil
 
 ### Installation
 
-List out the steps
-
 1. Download the project at [Getting Started](#getting-started)
 2. Plug your device in your computer and make sure the [USB Debug](https://stackoverflow.com/questions/18103117/how-to-enable-usb-debugging-in-android) is turned on in your device.
 3. Simply click in run button in Android Studio and wait to be installed.
