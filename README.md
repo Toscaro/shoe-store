@@ -1,78 +1,43 @@
-# The Shoe Store
+# Shoe Store
 
-This project will consist of five screens. You don't have to create a shoe store, you can use any other item as long as you create the following screens. You will be creating:
-
-1. Login screen: Email and password fields and labels plus create and login buttons
-2. Welcome onboarding screen
-3. Instructions onboarding screen
-4. Shoe Listing screen
-5. Shoe Detail screen for adding a new shoe
+Toscaro's Shoe Store will help you to store shoes from all existing brands and easily check your stock.
 
 ## Getting Started
 
-Open the starter project in the latest stable version of Android Studio.
+To run the project in your local machine, on github, simply download the zip file and extract where you would like to save it.
 
-Open the starter project in Android Studio
+### Installation
 
-##Steps
+List out the steps
 
-1. Open the starter project in Android Studio
+1. Download the project at [Getting Started](#getting-started)
+2. Plug your device in your computer and make sure the [USB Debug](https://stackoverflow.com/questions/18103117/how-to-enable-usb-debugging-in-android) is turned on in your device.
+3. Simply click in run button in Android Studio and wait to be installed.
+4. Check the app in your device.
 
-2. Add the navigation libraries to the app build.gradle file
+## Project Instructions (Required by Udacity)
 
-3. Add the safe-arg plugin to the main and app build.gradle file
+This project consists with a Single Activity
+5 Fragments:
 
-4. Create a new navigation xml file
+1. LoginFragment
+2. WelcomeFragment
+3. InstructionFragment
+4. ShoeListFragment
+5. AddShoeFragment
 
-5. Create a new Login destination.
+A unique ViewModel, created with the activity instance to hold all shoe data.
+As required, all layouts uses databinding and navigation.
 
-   * Include email and password labels 
+## Attribution
+The below shoe icon used on the application was made by [Smashicons](https://www.flaticon.com/authors/smashicons) from [Flaticon](https://www.flaticon.com)
 
-   - Include email and password fields
-   - Create buttons for creating a new login and logging in with an existing account
-   - Clicking either button should navigate to the Welcome Screen.
+<img src="/app/src/main/res/drawable/shoes.webp" alt="Shoe app logo" style="height: 100px; width:100px;"/>
 
-6. Create a new Welcome screen destination that includes:
+The below add picture icon used on the application was made by [Swifticons](https://www.flaticon.com/authors/swifticons) from [Flaticon](https://www.flaticon.com)
 
-   * A new layout
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the instructions screen
+<img src="/app/src/main/res/drawable/add_picture.webp" alt="Add new picture icon" style="height: 100px; width:100px;"/>
 
-7. Create a new Instruction destination that includes:
+## License
 
-   * A new layout
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the shoe list screen
-
-8. Create a class that extends ViewModel
-
-   *  Use a LiveData field that returns the list of shoes
-
-9. Create a new Shoe List destination that includes:
-
-   * A new layout
-   * A ScrollView
-   * A LinearLayout for Shoe Items
-   * A FloatingActionButton with an action to navigate to the shoe detail screen
-
-10. In MainActivity, setup the nav controller with the toolbar and an AppBarConfiguration.
-
-11. Create a new Shoe Detail destination that includes:
-
-    * A new layout
-    * A TextView label and EditView for the
-      * Shoe Name
-      * Company
-      * Shoe Size
-      * Description
-    * A Cancel button with an action to navigate back to the shoe list screen
-    * A Save button with an action to navigate back to the shoe list screen and add a new Shoe to the Shoe View Model
-
-12. Make sure you can’t go back to onboarding screens
-
-13. In the Shoe List screen:
-
-    * Use an Activity level ViewModel to hold a list of Shoes (use by activityViewModels)
-    * Observe the shoes variable from the ViewModel
-    * Use DataBindingUtil to inflate the shoe_list layout
-    * Add a new layout item into the scrollview for each shoe.
+* Please check the [License file](./LICENSE.md)
